@@ -110,22 +110,24 @@ label #btn,label #cancel{
 }
 	.content-wrapper h1{
 	text-align: center;
-	font-size: 100px;
+	font-size: 120px;
 	font-weight: bold;
 	color: #3657B3;
-	margin: 12px;
+	margin: 15px;
+	opacity: .8;
 }
 	.content-wrapper p{
 	text-align: center;
-	font-size: 18px;
+	font-size: 20px;
+    font-weight: 600;
 	margin: 10px;
 	padding: 10px;
 	font-family: sans-serif;
 }
 	.note a{
 	font-size: 20px;
-	font-weight: 500;
-	color: blue;
+	font-weight: 700;
+	color: #fff;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -138,8 +140,12 @@ label #btn,label #cancel{
 	padding: 10px;
 	width: 15%;
 	height: 50px;
+	opacity: .8;
 }
 
+.note a:hover{
+	color: blue;
+}
 @media screen and (min-width:360px) and (max-width: 800px){
 
 body{
