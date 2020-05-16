@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+-moz-
+-o-
+-webkit-
+
+}
+
+body{
+	background: url(bg1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+}
+.side-bar {
+	position: fixed;
+	left: -250px;
+	width: 220px;
+	height: 100%;
+	background: lightseagreen;
+	transition: all .5s ease;
+	opacity: .8;
+}
+.side-bar header{
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 70px;
+	background: navy;
+	user-select: none;
+}
+	.side-bar ul{
+		list-style: none;
+        
+	}
+.side-bar ul a{
+	display: block;
+	height: 100%; 
+	widows: 100%;
+	line-height: 65px;
+	font-size: 20px;
+	color: #fff;
+	padding-left: 40px;
+	border-top: 1px solid #ccc;
+	box-sizing: border-box;
+	border-bottom: 1px solid #000;
+	text-decoration: none;
+	transition: .5s
+}
+
+ul li:hover a{
+	padding-left: 50px; 
+}
+
+.side-bar ul a i{
+	margin-right: 16px;
+}
+
+#check{
+	display: none;
+}
+label #btn,label #cancel{
+	position: absolute;
+	cursor: pointer;
+	background: #021B79;
+	border-radius: 3px;
+
+	}
+
+	label #btn {
+		left: 40px;
+		top: 25px;
+		font-size: 35px;
+		color: #fff;
+		padding: 5px 10px;
+		transition: all .5s ease;
+	}
+
+	label #cancel{
+		position: fixed;
+		z-index: 1111;
+		left: 195px;
+		top: 28px;
+		font-size: 26px;
+		color: #000;
+		padding: 2px 7px;
+		transition: all .5s ease; 
+
+	}
+	#check:checked ~ .side-bar{
+		left: 0;
+	}
+
+	#check:checked ~ label #btn{
+		left: 250px;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	#check:checked ~ label #cancel{
+		left: 175px;
+
+	}
+.c-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: space-around;
+	padding: 20px;
+	margin: 15px;
+}
+
+.c-wrapper header{ 
+	font-size: 22px;
+	font-family: sans-serif;
+	margin: 10px;
+	color: #3657B3;
+
+}
+
+.dial{
+
+	font-size: 18px;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	border-radius: 2px;
+	background: blue;
+	height: 20%;
+	width: 80%;
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.dial a:hover{
+	color: #fff;
+}
+ 
+ a{
+ 	text-decoration: none;
+ 	color: #000;
+ 	padding: 5px;
+ }
+
+.contact-tel span{
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+	margin: 15px;
+	padding: 25px;
+}
+
+.route{
+	font-size: 18px;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	border-radius: 2px;
+	background: blue;
+	color: #000;
+	height: 20%;
+	width: 60%;
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	cursor: pointer;
+
+}
+.route a:hover {
+	color: #fff;
+}
+
+.add div{
+	font-size: 18px;
+	font-weight: 500;
+	margin: 10px;
+	padding: 10px;
+
+	}
+
+.biz div{
+	font-size: 22px;
+	font-family: sans-serif;
+	margin: 0px;
+	padding: 0px;
+	text-align: right;
+	display: inline-flex;
+	justify-content: flex-start;
+	align-self: flex-start;
+}
+
+.feedback{
+		background: #061161;
+		width: 25%;
+		height: 250px;
+		margin: auto;
+		padding: 25px;
+	}
+
+.feedback span{
+	color: #fff;
+	font-size: 18px;
+	font-family: sans-serif;
+	margin: 80px;
+	padding: 15px;
+}
+
+.feedback input[type="text"]  {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	color: #fff;
+	outline: none;
+	width: 100%;
+	height: 20px;
+	font-size:16px;
+	margin: 15px;
+	padding: 10px;
+
+}
+
+label{
+	color: #fff;
+	text-align: left;
+	margin: 5px;
+	padding-top: 30px;
+}
+
+.feedback input[type="submit"]{
+	border: none; 
+	background: #4E80BB;
+	color: #fff;
+	outline: none;
+	
+	font-size:15px;
+	width: 50%;
+	border-radius: 5px;
+	padding: 15px 8px;
+	cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+  background-color: #014a20;
+}
+@media screen and (min-width:315px) and (max-width: 768px){
+
+body{
+
+	height:100vh;
+	padding: 10px; 	
+}
+
+.c-wrapper{
+
+	margin: 20px;
+	padding: 5px;
+}
+
+.c-wrapper header{
+	margin: 12px;
+	padding: 5px;
+	text-align: center;
+
+}
+.dial{
+	padding: 20px;
+	margin-left: 15px;
+	width: 100%;
+	height: 30%;
+	font-weight: 550;
+}
+.contact-tel span{
+	padding: 20px;
+	margin: 10px;
+}
+.add div{
+	margin: auto;
+	padding: 5px;
+	width: 70%;
+	height: 30%;
+	opacity: 1;
+
+
+}
+.add p{
+	text-align: center;
+	padding: .7rem .2rem;
+	height: 2.5rem;
+	margin:  10px 22px;
+	width: 80%;
+}
+.route{
+	text-align: center;
+	width: 80%;
+	height: 3rem;
+	padding: .7rem .2rem;
+	margin: 10px;
+	font-size: 16px;
+	font-weight: 550;
+}
+	
+
+.feedback{
+	width: 300px;
+	height: 300px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.feedback span{
+	color: #fff;
+	font-size: 16px;
+	font-family: sans-serif;
+	margin: 80px;
+	padding: 15px;
+
+}
+.feedback input[type="submit"]{
+	border: none; 
+	background: #4E80BB;
+	color: #fff;
+	outline: none;
+	font-size:15px;
+	width: 50%;
+	border-radius: 5px;
+	padding: 15px 8px;
+	cursor: pointer;
+	margin: 20px;
+
+}
