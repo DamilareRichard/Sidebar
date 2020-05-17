@@ -48,7 +48,7 @@ body{
 	box-sizing: border-box;
 	border-bottom: 1px solid #000;
 	text-decoration: none;
-	transition: .5s
+	transition: all .5s ease;
 }
 
 ul li:hover a{
@@ -237,7 +237,6 @@ label{
 	background: #4E80BB;
 	color: #fff;
 	outline: none;
-	
 	font-size:15px;
 	width: 50%;
 	border-radius: 5px;
@@ -261,6 +260,8 @@ body{
 
 	margin: 20px;
 	padding: 5px;
+	justify-content: center;
+	align-items: center;
 }
 
 .c-wrapper header{
@@ -270,7 +271,7 @@ body{
 
 }
 .dial{
-	padding: 20px;
+	padding: 10px;
 	margin-left: 15px;
 	width: 100%;
 	height: 30%;
@@ -308,7 +309,7 @@ body{
 	
 
 .feedback{
-	width: 300px;
+	width: 250px;
 	height: 300px;
 	margin-left: 20px;
 	margin-bottom: 20px;
@@ -318,8 +319,14 @@ body{
 	color: #fff;
 	font-size: 16px;
 	font-family: sans-serif;
-	margin: 80px;
+	margin: 60px;
 	padding: 15px;
+
+}
+
+.feedback input[type="text"]{
+	width: 100%;
+	height: 20px;
 
 }
 .feedback input[type="submit"]{
