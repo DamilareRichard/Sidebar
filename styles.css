@@ -21,6 +21,7 @@ body{
 	left: -250px;
 	width: 220px;
 	height: 100%;
+	top: 0;
 	background: lightseagreen;
 	transition: all .5s ease;
 	opacity: .8;
@@ -70,7 +71,7 @@ ul li:hover a{
 label #btn,label #cancel{
 	position: absolute;
 	cursor: pointer;
-	background: #021B79;
+	/*background: #021B79;*/
 	border-radius: 3px;
 
 	}
@@ -88,7 +89,7 @@ label #cancel{
 		position: fixed;
 		z-index: 1111;
 		left: 195px;
-		top: 28px;
+		top: 10px;
 		font-size: 26px;
 		color: #000;
 		padding: 2px 7px;
@@ -106,7 +107,7 @@ label #cancel{
 	}
 
 #check:checked ~ label #cancel{
-		left: 175px;
+		left: 180px;
 
 	}
 	
